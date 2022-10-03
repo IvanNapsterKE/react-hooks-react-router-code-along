@@ -1,16 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Home() {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-}
+import App from "./app";
 
-function App() {
-  return <Home />;
-}
+// function Home() {
+//   return (
+//     <div>
+//       <h1>Home!</h1>
+//     </div>
+//   );
+// }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// function App() {
+//   return <Home />;
+// }
+
+
+ReactDOM.render(<Router>
+  <App />
+</Router>, document.getElementById("root"));
